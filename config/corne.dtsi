@@ -66,10 +66,19 @@ left_encoder: encoder_left {
 		resolution = <4>;
     	};
 
+		lefts_encoder: encoder_left {
+		compatible = "alps,ec11";
+		label = "LEFT_ENCODER";
+		a-gpios = <&pro_micro_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <4>;
+    	};
+
     	sensors {
         	compatible = "zmk,keymap-sensors";
-        	sensors = <&left_encoder>;
+        	sensors = <&left_encoder &lefts_encoder>;
    	};
+	   
 
 	// TODO: per-key RGB node(s)?
 };
