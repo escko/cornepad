@@ -56,7 +56,7 @@
    &kp RA(TAB) &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                    &kp LCTRL &kp LSHFT &trans   &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_cp DOWN_ARROW UP_ARROW>;
+                        sensor-bindings = <&inc_dec_kp LC(LBKT) LC(RBKT)>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@
    &trans   &trans       &trans       &kp LBRC       &kp RBRC &trans         &trans    &kp EQUAL  &kp UNDER     &trans  &trans    &trans
                                         &trans     &kp LSFT     &trans           &trans   &trans    &trans
                         >;
-                        sensor-bindings = <&inc_dec_cp RIGHT_ARROW LEFT_ARROW>;
+                        sensor-bindings = <&inc_dec_kp LC(LBKT) LC(RBKT)>;
                 };
 
                 raise_layer {
@@ -85,7 +85,7 @@
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
                                       &trans &trans &trans   &trans &trans &trans
                         >;
-                        sensor-bindings = <&inc_dec_cp LC(PLUS) LC(MINUS)>;
+                        sensor-bindings = <&inc_dec_kp LC(LBKT) LC(RBKT)>;
                 };
         };
 };
