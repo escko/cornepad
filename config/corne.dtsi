@@ -66,7 +66,7 @@ left_encoder: encoder_left {
 		resolution = <4>;
     	};
 
-		lefts_encoder: encoder_left {
+		left_encoder: encoder_lefts {
 		compatible = "alps,ec11";
 		label = "LEFT_ENCODER";
 		a-gpios = <&pro_micro_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
