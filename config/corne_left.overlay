@@ -21,6 +21,3 @@
     status = "okay";
 };
 
-&lefts_encoder {
-    status = "okay";
-};
