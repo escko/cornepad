@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 
 #define DEFAULT 0
@@ -52,7 +53,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp ESC  &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
+   &kp ESC  &kp Q &kp W &ext_power EP_TOG &kp R &kp T   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &mt LALT TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
    &kp RA(TAB) &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                    &kp LCTRL &kp LSHFT &trans   &mo RAISE &lt LOWER SPACE &kp LGUI
